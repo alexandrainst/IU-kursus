@@ -1,0 +1,1 @@
+Scriptet kan køres med kommandoen 'powershell -ExecutionPolicy Bypass -File powershell.ps1' 
