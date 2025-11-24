@@ -1,3 +1,8 @@
+# Forudsætning
+
+Tjek at du SSH-adgang til GNS3 VM (eller GNS-server).
+Brugernavn/kode er gns3/gns3.
+
 # Opsætning af pfSense
 
 ## Opret pfSense VM i QEMU
