@@ -75,6 +75,7 @@ på VM'en. Test forbindelsen med `ping 10.100.1.250`.
 ### Færdiggør opsættelse af pfSense gennem browser
 
 Opret forbindelse til pfSense gennem en browser.
+
 Dette kan f.eks. gøres ved at lave en SSH-tunnel gennem den LAN
 forbindelse der er mellem VM'en og pfSense. Alternativt kan man gøre
 det direkte i VM'en hvis den har en browser.
@@ -82,6 +83,8 @@ det direkte i VM'en hvis den har en browser.
 ssh -N -L localhost:8080:10.100.1.250:80 gns3@<VM-ip>
 ```
 Brugernavn/kode til webinterfacet er admin/pfsense.
+
+Aktiver `Enable Forwading Mode` og `Register DHCP leases in the DNS Resolver` under `Service > DNS Resolver`.
 
 # Opret alpine VM i QEMU og opsætning
 
