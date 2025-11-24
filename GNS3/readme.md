@@ -74,7 +74,7 @@ Dette kan f.eks. gøres ved at lave en SSH-tunnel gennem den LAN
 forbindelse der er mellem VM'en og pfSense. Alternativt kan man gøre
 det direkte i VM'en hvis den har en browser.
 ``` 
-ssh -N -L localhost:8080:10.100.1.250:80 gns3@<VM-ip>`
+ssh -N -L localhost:8080:10.100.1.250:80 gns3@<VM-ip>
 ```
 Brugernavn/kode til webinterfacet er admin/pfsense.
 
@@ -103,7 +103,9 @@ telnet <pfSense-ip> 9001
 ```
 og se den ukrypterede kommunikation i Wireshark.
 
-# Web server på alpine
+Wireshark kan tilgås ved at højreklikke på forbindelse og vælge 'Capture'.
+
+# Web
 
 ## QEMU alpine
 
