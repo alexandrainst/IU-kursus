@@ -1,0 +1,15 @@
+Forudsætning (se også GNS3-mappen på github):
+pfSense sat op, med internetforbindelse og adgang til webinterface
+alpine linux sat op (i VM eller Docker)
+
+Øvelse 1: Telnet fra alpine til pfSense og capture ukrypterede beskeder
+
+Øvelse 2: Port forward en webserver på alpine gennem pfSense
+
+Øvelse 3: Opret endnu en alpine-maskine og ARP-spoof/-ban den ene alpine med den anden (med bettercap). 
+Alternativ: Opret en Kali-maskine og ARP-spoof alpine-maskinen med arpspoof
+Bonus: Fix angrebet ved at bruge statisk ARP-mapping
+
+Øvelse 4: Opret en DMZ ved at tilføje flere maskiner (evt blot VPCS) og endnu en firewall
+
+Øvelse N: Find på andre sikkerhedsmekanismer at eksemplificere i labbet (evt brug flere af bettercap el. Kalis spoofing-/MitM-værktøjer)
