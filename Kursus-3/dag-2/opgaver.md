@@ -82,6 +82,7 @@ det een gang, så optræder Score Board'et i sidebaren.
 
 <details>
 <summary>Hints</summary>
+
 1. har du søgt efter 'score' eller 'board'? 
 
 2. i `main.js` indikerer `path:"foo"` at man kan gå ind på
@@ -103,6 +104,7 @@ derfor omgås.
 
 <details>
 <summary>Hints</summary> 
+
 1. kan man evt. bare aktivere knappen? 
 
 2. undersøg knappen, ved at inspicere den med devtools
@@ -110,6 +112,7 @@ derfor omgås.
 
 <details>
 <summary>Løsning</summary> 
+
 1. start processen med at oprette en ny bruger
 
 2. udfyld mail, password og security question, men undlad at gentage password
@@ -127,6 +130,7 @@ Er det muligt at give hjemmesiden et 0-stjernet review?
 
 <details>
 <summary>Hints</summary> 
+
 1. undersøg 'Customer Feedback'-menuen
 
 2. inspect de forskellige elementer i formularen
@@ -134,6 +138,7 @@ Er det muligt at give hjemmesiden et 0-stjernet review?
 
 <details>
 <summary>Løsning</summary>
+
 1. find 'Customer Feedback'-menuen i sidebaren
 
 2. inspect rating-elementet
@@ -165,6 +170,7 @@ Denne opgave handler om at logge ind som administrator.
 
 <details>
 <summary>Hints</summary>
+
 1. hvis man ikke angiver email i login-formularen, så er admin-brugeren default-værdien
 
 2. prøv at bruge SQL-injection i login-formularen
@@ -172,11 +178,13 @@ Denne opgave handler om at logge ind som administrator.
 
 <details>
 <summary>Løsning</summary>
+
 1. gå til login-formularen
 
 2. brug emailen "' OR 1=1--"
 
 3. brug et vilkårligt password
+
 4. login
 </details>
 
@@ -188,6 +196,7 @@ adminstrationssiden på Juiceshop.
 
 <details>
 <summary>Hints</summary> 
+
 1. har du søgt efter ’admin’?
 
 2. se hints til opgaven 'Score Board'
@@ -195,6 +204,7 @@ adminstrationssiden på Juiceshop.
 
 <details>
 <summary>Løsning</summary>
+
 1. login som administrator (forrige opgave)
 
 2. gå til /#/administration
@@ -207,6 +217,7 @@ kodeord, men hans email.
 
 <details>
 <summary>Hints</summary>
+
 1. med admin adgang kan du finde Jims email 
 
 2. brug den administrationsside du fandt i forrige opgave
@@ -217,6 +228,7 @@ kodeord, men hans email.
 
 <details>
 <summary>Løsning</summary>
+
 1. login som admin
 
 2. find Jims email i /#/administration
@@ -248,6 +260,7 @@ fjerne scripts ordentligt.
 
 <details>
 <summary>Hints</summary>
+
 1. prøv at bestille en ordre og find ordren under din profil
 
 2. når du tracker din ordrer, bliver dit ordrenummeret vist i browseren 
@@ -259,6 +272,7 @@ fjerne scripts ordentligt.
 
 <details>
 <summary>Hints</summary>
+
 1. løs 'Admin Section' først 
 
 2. hvis man er admin, så kan man se kan man se brugeres email i admin-sektionen 
@@ -320,6 +334,7 @@ uden at betale.
 
 <details>
 <summary>Hints</summary>
+
 1. undersøg trafikken der bliver sendt når man betaler for deluxe membership
 
 2. brug burp intercept 
@@ -333,6 +348,7 @@ I denne opgave skal man prøve at gennemføre et køb der gør en rig.
 
 <details>
 <summary>Hints</summary>
+
 1. undersøg trafikken der bliver sendt når man putter genstande i sin kurv
 
 2. brug burp intercept
@@ -346,6 +362,7 @@ I denne opgave skal man forsøge at registrere en ny bruger som administrator.
 
 <details>
 <summary>Hints:</summary>
+
 1. undersøg om du opfanget noget trafik på endpointet `/api/Users`,
    ellers prøv at oprette en ny bruger
 
@@ -368,6 +385,7 @@ kan f.eks. ikke omgås som i de tidligere XSS opgaver.
 
 <details>
 <summary>Hints</summary>
+
 1. undersøg hvordan 'Customer Feedback' bliver håndteret
 
 2. prøv at sende forskellige varianter af XSS-strenge med Burp
@@ -386,6 +404,7 @@ er tilgængelig via browseren.
 
 <details>
 <summary>Hints</summary>
+
 1. brug `Site map` til at se hvilke endpoints der under `/api/` og
    forsøg at sende POSTs til nogen af dem
 
@@ -423,6 +442,7 @@ godkendt af backenden.
 
 <details>
 <summary>Hints</summary>
+
 1. find først en valid JWT og dekod den
 
 2. ændr `alg` i headeren af JWT'en til noget usikkert og ændr emailen
