@@ -306,10 +306,9 @@ Prøv til sidst at bruge den cookie i eksfiltrerer til at logge ind med.
 Ved opstart, bare vælg alle default indstillinger. Bemærk, at man kun
 kan have midlertidige projekter med community edition af Burp Suite.
 
-Target -> Scope:
-
-- 'Include in Scope' 192.168.1.20:3010
-- 'Exclude from Scope' 192.168.1.20:3010/socket.io
+- Target -> Scope:
+  - 'Include in Scope' 192.168.1.20:3010
+  - 'Exclude from Scope' 192.168.1.20:3010/socket.io
 
 - Target -> Site map -> Site map filter (klik)
 - Tjek 'Show only in-scope items'
