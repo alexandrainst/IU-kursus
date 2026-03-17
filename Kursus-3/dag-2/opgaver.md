@@ -16,7 +16,7 @@ Alt efter hvor svært man vil gøre det for sig selv så gør følgende:
 
 Opgaver markeret med * er ikke opgaver fra JuiceShop. 
 
-# Setup*
+# Opgave 0: Setup*
 
 ## Start serveren
 
@@ -70,7 +70,7 @@ Brug 5 minutter på at bruge hjemmesiden som den er designet.
 
 Prøv f.eks. at oprette en bruger, logge ind, ændr password, lave et review, etc 
 
-# Med devtools 
+# Opgave 1: Med devtools 
 
 ## Improper Input Validation 
 
@@ -261,7 +261,7 @@ Prøv derefter at logge ind som admin og besøg den side hvor scriptet er inject
 
 Prøv til sidst at bruge den cookie i eksfiltrerer til at logge ind med.
 
-# Med Burp Suite 
+# Opgave 2: Med Burp Suite 
 
 ## Setup*
 
@@ -376,7 +376,7 @@ ffuf -w /usr/share/seclists/Passwords/2023-200_most_used_passwords.txt \
      -H "Content-Type: application/json" \
 ```
 
-## Sessionshåndtering 
+## Opgave 3: Sessionshåndtering 
 
 ### Find JWT og afkod den for at se hvad den indeholder* 
 
