@@ -18,8 +18,21 @@ Programmet `sudo` kan dog begrænses til således at en bruger kun kan benytte a
 4. Skift til den nye bruger og prøv at køre `sudo nmap` se at det virker
 5. Prøv også at køre et andet program med `sudo` og se at det bliver afvist.
 
-Hints: Tjek manualen med `man sudo`.
- 
+Hints: Tjek manualen med `man sudoers` eller https://www.sudo.ws/docs/man/sudoers.man/#Runas_Spec
+
+
+Sudoers filen har en forholdsvist specielt format, men forsimplet kan det forklares sådan:
+```
+username host=(user:group) tag:commands
+```
+
+`username` for den givne user, hvis det er prefikset med `%` (såsom `%admin`) er det en gruppe.
+`host`: For hvilken Hvis filen ikke er delt kan host bare sættes til `ALL`
+`user:group` specificere hvilken bruger og gruppe `username` kan eksekvere som.
+`tag`: kan eksempelvis gøre password unødvendigt med `NOPASSWD`.
+`commands`; en liste af kommandoer som en brugeren må eksekvere.
+
+
 
 
 # Web filter
@@ -27,7 +40,7 @@ Hints: Tjek manualen med `man sudo`.
 Som led i 8.23 skal I lade en foranstaltning for webfiltering for at undgå at brugere i netværket tilgår upassende indhold.
 Dette kan gøres på flere forskellige måder, men den nemmeste måde er at opstille til DNS filter.
 
-1. Log på OPNsense og find Unbound DNS under Services. 
+1. Log på OPNsense og find Unbound DNS under Services.
 2. Under blocklists bloker nu et valgt domæne (e.g. `facebook.com`).
 3. Prøv nu at tilgå siden gennem kali maskinen, enten med `curl` eller en browser.
 
