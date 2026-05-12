@@ -215,8 +215,11 @@ Start WAF-docker på vulnsrv1
 
 Forsøg at løse juiceshop-opgaven *Login Admin* med en SQL-injection.
 
-Hints:
-- Log ind med `admin@juice-sh.op' OR 1=1--` og vilkårligt kodeord
+<details>
+<summary>Hints:</summary>
+
+1. Log ind med `admin@juice-sh.op' OR 1=1--` og vilkårligt kodeord
+</details>
 
 Find ID'et på den regel der blokerer for angrebet i loggen (Wazuh eller direkte i log-filerne) 
 Find denne regel på github <https://github.com/coreruleset/coreruleset/tree/main/rules>, for at se hvordan/hvorfor den blev triggered
@@ -225,8 +228,11 @@ Find denne regel på github <https://github.com/coreruleset/coreruleset/tree/mai
 
 Forsøg at løse juiceshop-opgaven *XSS DOM*
 
-Hints:
-- Søg efter strengen `<iframe src="javascript:alert('xss')">`
+<details>
+<summary>Hints:</summary>
+
+1. Søg efter strengen `<iframe src="javascript:alert('xss')">`
+</details>
 
 Hvorfor bliver dette XSS-angreb ikke blokeret?
 
@@ -234,9 +240,13 @@ Hvorfor bliver dette XSS-angreb ikke blokeret?
 
 Forsøg at løse juiceshop-opgaven *Client-side XSS Protection*
 
-Hints:
-- Opret en bruger med emailen `<iframe src="javascript:alert('xss')">` 
-- Du er nødt til at aktivere knappen i webinterfacet, eller omgå webinterfacet ved at bruge Burp/ZAP/Postman/cURL
+<details>
+<summary>Hints:</summary>
+
+1. Opret en bruger med emailen `<iframe src="javascript:alert('xss')">` 
+
+2. Du er nødt til at aktivere knappen i webinterfacet, eller omgå webinterfacet ved at bruge Burp/ZAP/Postman/cURL
+</details>
 
 Find ID'et på den regel der blokerer for angrebet i loggen (Wazuh eller direkte i log-filerne) 
 Find denne regel på github <https://github.com/coreruleset/coreruleset/tree/main/rules>, for at se hvordan/hvorfor den blev triggered
