@@ -37,11 +37,11 @@ ZAP er en webproxy man kan bruge til at penteste, analysere og angribe hjemmesid
 </ossec_config> 
 ```
 
-I det næste opgaver skal vi bruge `172.20.0.20:3010` for at tilgå juiceshop. Så kan vi se vores aktivitet blive logget i Wazuh.
+I det næste opgaver skal vi bruge `172.20.0.10:3010` for at tilgå juiceshop. Så kan vi se vores aktivitet blive logget i Wazuh.
 
 ## Opgave 1
 
-1. Kør ZAP's automatiserede scanning på `http://172.20.0.20:3010`. Vælg scan policy 'Pen Test', 'use traditional spider' og 'if modern' med 'firefox headless'.
+1. Kør ZAP's automatiserede scanning på `http://172.20.0.10:3010`. Vælg scan policy 'Pen Test', 'use traditional spider' og 'if modern' med 'firefox headless'.
 
 2. Kig i gennem dens resultater
   - Hvilke undersider finder den?
