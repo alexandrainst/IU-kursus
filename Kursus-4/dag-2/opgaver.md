@@ -270,6 +270,21 @@ Genstart docker med `(cd /opt/juiceshop-waf && (docker compose down; docker comp
 Du kan læse mere om falske positiver og tuning af CRS her: 
 <https://coreruleset.org/docs/2-how-crs-works/2-3-false-positives-and-tuning/>
 
+## Ekstraopgave
+
+SQLite, som er den DB-teknologi som Juiceshop anvender, understøtter
+syntakse `==`, hvilket ikke er standard SQL.
+
+Dette betyder, at man kan omgå WAF'ens SQLi-beskyttelse i
+login-formen, ved at skrive `' OR 1==1--` som email og hvad som helst
+som kodeord.
+
+Hvis man øger paranoia til 3, så bliver dette nye angreb blokeret.
+
+1. Øg paranoia til 3 ved at sætte `PARANOIA: 3` under `environment:` i `docker-compose.yml`
+2. Bloker angrebet
+3. Find hvilket regel-ID der blokerer angrebet (Wazuh) og slå reglen op på github
+
 # SBOM og sårbarhedsscanning
 
 Denne opgave underbygger målepinden
