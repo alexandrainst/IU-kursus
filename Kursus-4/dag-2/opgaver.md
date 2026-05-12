@@ -302,7 +302,9 @@ Generer forskellige SBOM-formater og sammenlign dem f.eks.
 Du kan evt displaye dem med `jq` og `less`:
 
 `cat cyclonedx-json.sbom | jq | less`
+
 `cat spdx-json.sbom | jq | less`
+
 `cat json.sbom | jq | less`
 
 ## Opgave 3
