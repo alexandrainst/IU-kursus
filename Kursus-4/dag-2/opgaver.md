@@ -314,7 +314,14 @@ Scan nogle docker containere ved at køre følgende kommandoer
 
 ## Opgave 4
 
-Slå nogle af de CVE'er I fandt i forrige opgave op på internettet, f.eks på <https://nvd.nist.gov/vuln>
+Den docker der kører JuiceShop+ModSecurity+CRS bruger containeren
+`owasp/modsecurity-crs:nginx`. Burde man måske bruge
+`owasp/modsecurity-crs:apache-alpine` i stedet?
+
+## Opgave 5
+
+Slå nogle af de CVE'er I fandt i de forrige opgaver op på internettet,
+f.eks på <https://nvd.nist.gov/vuln>
 
 # Ekstra JuiceShop-opgaver
 
