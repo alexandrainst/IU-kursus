@@ -277,7 +277,7 @@ syntakse `==`, hvilket ikke er standard SQL.
 
 Dette betyder, at man kan omgå WAF'ens SQLi-beskyttelse i
 login-formen, ved at skrive `' OR 1==1--` som email og hvad som helst
-som kodeord.
+som kodeord. Det er beskrevet i dette issue på github <https://github.com/coreruleset/coreruleset/issues/4121>
 
 Hvis man øger paranoia til 3, så bliver dette nye angreb blokeret.
 
