@@ -299,6 +299,12 @@ Generer forskellige SBOM-formater og sammenlign dem f.eks.
 2. `syft -o spdx-json nginx:alpine > spdx.sbom`
 3. `syft -o json nginx:alpine > json.sbom`
 
+Du kan evt displaye dem med `jq` og `less`:
+
+`cat cyclonedx-json.sbom | jq | less`
+`cat spdx-json.sbom | jq | less`
+`cat json.sbom | jq | less`
+
 ## Opgave 3
 
 Installer grype vulnsrv1 med følgende kommando
